@@ -66,9 +66,13 @@ header .menu nav { margin-bottom: 10px; overflow: hidden; }
 
 header .menu nav ul { -webkit-animation-name: slideIt; animation-name: slideIt; -webkit-animation-duration: 500ms; animation-duration: 500ms; -webkit-animation-delay: calc(800ms * 0.2); animation-delay: calc(800ms * 0.2); -webkit-animation-fill-mode: both; animation-fill-mode: both; }
 
-header .menu nav ul li { display: inline-block; margin-left: 40px; }
+header .menu nav ul li { display: inline-block; margin-left: 40px; position: relative; padding-bottom: 8px; }
 
-header .menu nav ul li a:hover { color: #66FCF1; }
+header .menu nav ul li:after { content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background-color: #66FCF1; -webkit-transition: width 400ms; transition: width 400ms; }
+
+header .menu nav ul li:hover { color: #66FCF1; }
+
+header .menu nav ul li:hover:after { width: 100%; }
 
 .hero .content .title { padding: 200px 0; }
 
