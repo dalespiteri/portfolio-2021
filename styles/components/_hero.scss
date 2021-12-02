@@ -1,4 +1,5 @@
 @import '../base/var';
+@import '../base/ani';
 
 .hero {
     .content {
@@ -9,6 +10,7 @@
                 margin-bottom: -0.05em;
                 position: relative;
                 left: -0.04em;
+                animation: 700ms ease-out 0s 1 forwards slideDown;
             }
 
             h2 {
@@ -16,6 +18,8 @@
                 font-size: 1.8rem;
                 font-weight: 200;
                 letter-spacing: 0.25em;
+                color: $brightTeal;
+                animation: 800ms ease-out 0s 1 forwards slideUp;
             }
         }
 
