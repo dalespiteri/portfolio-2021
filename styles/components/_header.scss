@@ -1,18 +1,56 @@
 @import '../base/var';
 
+@keyframes spinItBaby {
+    20% {
+        transform: rotate(-10deg);
+    }
+
+    90% {
+        transform: rotate(calc(380deg));
+    }
+
+    100% {
+        transform: rotate(calc(360deg));
+    }
+}
+
+@keyframes slideIt {
+    from {
+        opacity: 0;
+        transform: translateX(-100%)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
 header {
     .menu {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-end;
         padding: 40px 0;
 
         .logo {
             width: 100px;
+            animation-name: spinItBaby;
+            animation-duration: 800ms;
+            animation-fill-mode: forwards;
+            transform-origin: 42px center;
         }
 
         nav {
+            margin-bottom: 10px;
+            overflow: hidden;
+
             ul {
+                animation-name: slideIt;
+                animation-duration: 500ms;
+                animation-delay: calc(800ms * 0.2);
+                animation-fill-mode: both;
+
                 li {
                     display: inline-block;
                     margin-left: 40px;

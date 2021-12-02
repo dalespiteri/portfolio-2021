@@ -18,6 +18,8 @@ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: n
 
 table { border-collapse: collapse; border-spacing: 0; }
 
+img { display: block; }
+
 body { background-color: #0B0C10; color: white; }
 
 .w-100 { width: 100%; }
@@ -34,9 +36,35 @@ h1 { font-size: 3rem; }
 
 h2 { font-size: 2rem; }
 
-header .menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 40px 0; }
+@-webkit-keyframes spinItBaby { 20% { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); }
+  90% { -webkit-transform: rotate(calc(380deg)); transform: rotate(calc(380deg)); }
+  100% { -webkit-transform: rotate(calc(360deg)); transform: rotate(calc(360deg)); } }
 
-header .menu .logo { width: 100px; }
+@keyframes spinItBaby { 20% { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); }
+  90% { -webkit-transform: rotate(calc(380deg)); transform: rotate(calc(380deg)); }
+  100% { -webkit-transform: rotate(calc(360deg)); transform: rotate(calc(360deg)); } }
+
+@-webkit-keyframes slideIt { from { opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); }
+  to { opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@keyframes slideIt { from { opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); }
+  to { opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+header .menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; padding: 40px 0; }
+
+header .menu .logo { width: 100px; -webkit-animation-name: spinItBaby; animation-name: spinItBaby; -webkit-animation-duration: 800ms; animation-duration: 800ms; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-transform-origin: 42px center; transform-origin: 42px center; }
+
+header .menu nav { margin-bottom: 10px; overflow: hidden; }
+
+header .menu nav ul { -webkit-animation-name: slideIt; animation-name: slideIt; -webkit-animation-duration: 500ms; animation-duration: 500ms; -webkit-animation-delay: calc(800ms * 0.2); animation-delay: calc(800ms * 0.2); -webkit-animation-fill-mode: both; animation-fill-mode: both; }
 
 header .menu nav ul li { display: inline-block; margin-left: 40px; }
 
