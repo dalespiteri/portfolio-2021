@@ -28,11 +28,11 @@ body { background-color: #0B0C10; color: white; }
 
 body { font-family: 'Poppins'; font-weight: 400; font-size: 1rem; }
 
-p:not(:last-child), h1:not(:last-child), h2:not(:last-child), h3:not(:last-child), h4:not(:last-child), h5:not(:last-child), h6:not(:last-child), ul:not(:last-child), ol:not(:last-child) { margin-bottom: 1em; }
+p:not(:last-child), h2:not(:last-child), h3:not(:last-child), h4:not(:last-child), h5:not(:last-child), h6:not(:last-child), ul:not(:last-child), ol:not(:last-child) { margin-bottom: 1em; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: 800; }
 
-h1 { font-size: 3rem; }
+h1 { font-size: 8rem; margin-bottom: 0.25em; }
 
 h2 { font-size: 2rem; }
 
@@ -69,3 +69,15 @@ header .menu nav ul { -webkit-animation-name: slideIt; animation-name: slideIt; 
 header .menu nav ul li { display: inline-block; margin-left: 40px; }
 
 header .menu nav ul li a:hover { color: #66FCF1; }
+
+.hero .content .title { padding: 200px 0; }
+
+.hero .content .title h1 { margin-bottom: -0.05em; position: relative; left: -0.04em; }
+
+.hero .content .title h2 { text-transform: uppercase; font-size: 1.8rem; font-weight: 200; letter-spacing: 0.25em; }
+
+.hero .content .dev-icons { font-size: 3rem; }
+
+.hero .content .dev-icons ul li { display: inline-block; margin-right: 20px; }
+
+.hero .content .dev-icons ul li:hover { color: #66FCF1; }
