@@ -46,6 +46,8 @@ h1 { font-size: 8rem; margin-bottom: 0.25em; }
 
 h2 { font-size: 2rem; }
 
+h3 { font-size: 1rem; }
+
 @-webkit-keyframes slideDown { from { opacity: 0;
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%); }
@@ -131,7 +133,9 @@ header .menu nav ul li { margin-left: 40px; }
   90% { -webkit-transform: rotate(calc(380deg)); transform: rotate(calc(380deg)); }
   100% { -webkit-transform: rotate(calc(360deg)); transform: rotate(calc(360deg)); } }
 
-.hero .content .title { padding: 200px 0; }
+.hero .content { padding: 240px 0; }
+
+.hero .content .title { margin-bottom: 100px; }
 
 .hero .content .title h1 { margin-bottom: -0.05em; position: relative; left: -0.04em; -webkit-animation: 700ms ease-out 0s 1 forwards slideDown; animation: 700ms ease-out 0s 1 forwards slideDown; }
 
@@ -139,9 +143,13 @@ header .menu nav ul li { margin-left: 40px; }
 
 .hero .content .dev-icons { font-size: 3rem; }
 
-.hero .content .dev-icons ul li { display: inline-block; margin-right: 20px; }
+.hero .content .dev-icons ul li { display: inline-block; margin-right: 20px; position: relative; }
+
+.hero .content .dev-icons ul li h3 { font-weight: 200; text-transform: uppercase; position: absolute; bottom: 0; left: 50%; -webkit-transform: translate(-50%, 300%); transform: translate(-50%, 300%); opacity: 0; -webkit-transition: all 200ms; transition: all 200ms; font-size: 0.8rem; }
 
 .hero .content .dev-icons ul li:hover { color: #66FCF1; }
+
+.hero .content .dev-icons ul li:hover h3 { -webkit-transform: translate(-50%, 200%); transform: translate(-50%, 200%); opacity: 1; }
 
 footer ul { padding: 40px 0; }
 
