@@ -13,4 +13,35 @@ body {
     width: 90%;
     max-width: 1400px;
     margin: 0 auto;
+
+    .content {
+        padding: 100px 0;
+    }
+}
+
+.underline-menu {
+    li {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 8px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: $brightTeal;
+            transition: width 400ms;
+        }
+
+        &:hover {
+            color: $brightTeal;
+
+            &:after {
+                width: 100%;
+            }
+        }
+    }
 }

@@ -23,29 +23,7 @@ header {
                 animation-fill-mode: both;
 
                 li {
-                    display: inline-block;
                     margin-left: 40px;
-                    position: relative;
-                    padding-bottom: 8px;
-
-                    &:after {
-                        content: '';
-                        position: absolute;
-                        left: 0;
-                        bottom: 0;
-                        width: 0;
-                        height: 1px;
-                        background-color: $brightTeal;
-                        transition: width 400ms;
-                    }
-
-                    &:hover {
-                        color: $brightTeal;
-
-                        &:after {
-                            width: 100%;
-                        }
-                    }
                 }
             }
         }
