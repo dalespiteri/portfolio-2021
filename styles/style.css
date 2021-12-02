@@ -145,7 +145,7 @@ header .menu nav ul li { margin-left: 40px; }
 
 .hero .content .dev-icons ul li { display: inline-block; margin-right: 20px; position: relative; }
 
-.hero .content .dev-icons ul li h3 { font-weight: 200; text-transform: uppercase; position: absolute; bottom: 0; left: 50%; -webkit-transform: translate(-50%, 300%); transform: translate(-50%, 300%); opacity: 0; -webkit-transition: all 200ms; transition: all 200ms; font-size: 0.8rem; }
+.hero .content .dev-icons ul li h3 { font-weight: 200; text-transform: uppercase; position: absolute; bottom: 0; left: 50%; -webkit-transform: translate(-50%, 300%); transform: translate(-50%, 300%); opacity: 0; -webkit-transition: all 200ms; transition: all 200ms; font-size: 0.8rem; letter-spacing: 0.15em; }
 
 .hero .content .dev-icons ul li:hover { color: #66FCF1; }
 
