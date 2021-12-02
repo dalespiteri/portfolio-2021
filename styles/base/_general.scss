@@ -1,3 +1,14 @@
+@import '../base/var';
+
+body {
+    background-color: $almostBlack;
+    color: white;
+}
+
+.w-100 {
+    width: 100%;
+}
+
 .container {
     width: 90%;
     max-width: 1400px;
