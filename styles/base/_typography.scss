@@ -4,6 +4,7 @@ body {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 1rem;
+    line-height: 1.4;
 }
 
 p,
@@ -34,9 +35,15 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-bottom: 1em;
+
+    &.section-title {
+        color: $brightTeal;
+        margin-bottom: 100px;
+    }
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 2rem;
 }
