@@ -98,6 +98,12 @@ h3 { font-size: 1rem; }
   90% { -webkit-transform: rotate(calc(380deg)); transform: rotate(calc(380deg)); }
   100% { -webkit-transform: rotate(calc(360deg)); transform: rotate(calc(360deg)); } }
 
+@-webkit-keyframes mutatingClipPath { from { -webkit-clip-path: polygon(5% 5%, 100% 0%, 95% 95%, 0% 100%); clip-path: polygon(5% 5%, 100% 0%, 95% 95%, 0% 100%); }
+  to { -webkit-clip-path: polygon(0% 0%, 95% 5%, 100% 100%, 5% 95%); clip-path: polygon(0% 0%, 95% 5%, 100% 100%, 5% 95%); } }
+
+@keyframes mutatingClipPath { from { -webkit-clip-path: polygon(5% 5%, 100% 0%, 95% 95%, 0% 100%); clip-path: polygon(5% 5%, 100% 0%, 95% 95%, 0% 100%); }
+  to { -webkit-clip-path: polygon(0% 0%, 95% 5%, 100% 100%, 5% 95%); clip-path: polygon(0% 0%, 95% 5%, 100% 100%, 5% 95%); } }
+
 header .menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; padding: 40px 0; }
 
 header .menu .logo { width: 100px; }
@@ -133,6 +139,9 @@ header .menu nav ul li { margin-left: 40px; }
   90% { -webkit-transform: rotate(calc(380deg)); transform: rotate(calc(380deg)); }
   100% { -webkit-transform: rotate(calc(360deg)); transform: rotate(calc(360deg)); } }
 
+@keyframes mutatingClipPath { from { -webkit-clip-path: polygon(5% 5%, 100% 0%, 95% 95%, 0% 100%); clip-path: polygon(5% 5%, 100% 0%, 95% 95%, 0% 100%); }
+  to { -webkit-clip-path: polygon(0% 0%, 95% 5%, 100% 100%, 5% 95%); clip-path: polygon(0% 0%, 95% 5%, 100% 100%, 5% 95%); } }
+
 .hero .content { padding: 240px 0; }
 
 .hero .content .title { margin-bottom: 100px; }
@@ -150,6 +159,10 @@ header .menu nav ul li { margin-left: 40px; }
 .hero .content .dev-icons ul li:hover { color: #66FCF1; }
 
 .hero .content .dev-icons ul li:hover h3 { -webkit-transform: translate(-50%, 200%); transform: translate(-50%, 200%); opacity: 1; }
+
+.projects .project { display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; }
+
+.projects .project .screenshot { -webkit-animation-name: mutatingClipPath; animation-name: mutatingClipPath; -webkit-animation-duration: 2000ms; animation-duration: 2000ms; -webkit-animation-direction: alternate; animation-direction: alternate; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; }
 
 footer ul { padding: 40px 0; }
 
