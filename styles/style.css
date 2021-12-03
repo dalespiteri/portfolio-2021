@@ -164,9 +164,13 @@ header .menu nav ul li { margin-left: 40px; }
 
 .hero .content .dev-icons ul li:hover h3 { -webkit-transform: translate(-50%, 100%); transform: translate(-50%, 100%); opacity: 1; }
 
-.projects .project { display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; gap: 30px; }
+.projects .project { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 30px; }
 
-.projects .project > div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.projects .project:nth-child(even) { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+
+.projects .project:not(:last-child) { margin-bottom: 100px; }
+
+.projects .project .info { width: 50%; }
 
 .projects .project .info .tech-stack { font-size: 1.5rem; }
 
@@ -174,7 +178,7 @@ header .menu nav ul li { margin-left: 40px; }
 
 .projects .project .info hr { border: 0; height: 1px; background-color: #45A29E; margin: 40px 0; opacity: 0.1; }
 
-.projects .project .screenshot { -webkit-animation-name: mutatingClipPath; animation-name: mutatingClipPath; -webkit-animation-duration: 5000ms; animation-duration: 5000ms; -webkit-animation-direction: alternate; animation-direction: alternate; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; }
+.projects .project .screenshot { width: 50%; -webkit-animation-name: mutatingClipPath; animation-name: mutatingClipPath; -webkit-animation-duration: 5000ms; animation-duration: 5000ms; -webkit-animation-direction: alternate; animation-direction: alternate; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; }
 
 footer ul { padding: 40px 0; }
 

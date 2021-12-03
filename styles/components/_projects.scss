@@ -1,16 +1,21 @@
 .projects {
     .project {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 30px;
 
-        >div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 100px;
         }
 
         .info {
+            width: 50%;
+
             .tech-stack {
                 font-size: 1.5rem;
 
@@ -29,6 +34,7 @@
         }
 
         .screenshot {
+            width: 50%;
             animation-name: mutatingClipPath;
             animation-duration: 5000ms;
             animation-direction: alternate;
