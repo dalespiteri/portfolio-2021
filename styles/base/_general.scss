@@ -3,6 +3,7 @@
 body {
     background-color: $almostBlack;
     color: white;
+    background: linear-gradient(to bottom left, #133633, $almostBlack 30%);
 }
 
 .w-100 {
@@ -50,4 +51,8 @@ ul.inline-list {
     li {
         display: inline-block;
     }
+}
+
+i.devicon {
+    color: $lightTeal;
 }
