@@ -3,7 +3,8 @@
 body {
     background-color: $almostBlack;
     color: white;
-    background: linear-gradient(to bottom left, #133633, $almostBlack 30%);
+    background: linear-gradient(200deg, #133633, $almostBlack 30%);
+    background-attachment: fixed;
 }
 
 .w-100 {
