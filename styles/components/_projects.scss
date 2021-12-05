@@ -16,6 +16,14 @@
         .info {
             width: 50%;
 
+            a {
+                h3 {
+                    &:hover {
+                        color: $brightTeal;
+                    }
+                }
+            }
+
             .tech-stack {
                 font-size: 1.5rem;
 
