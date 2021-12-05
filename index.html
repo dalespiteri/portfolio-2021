@@ -119,7 +119,9 @@
 
                     <div class="project">
                         <div class="info">
-                            <h3>Lot 42</h3>
+                            <a href="https://lot-42.com/" target="_blank">
+                                <h3>Lot 42</h3>
+                            </a>
                             <ul class="tech-stack inline-list">
                                 <li>
                                     <i class="devicon devicon-javascript-plain"></i>
@@ -152,7 +154,9 @@
 
                     <div class="project">
                         <div class="info">
-                            <h3>Best Before Trailers</h3>
+                            <a href="https://calm-ocean-43331.herokuapp.com/#/" target="_blank">
+                                <h3>Best Before Trailers</h3>
+                            </a>
                             <ul class="tech-stack inline-list">
                                 <li>
                                     <i class="devicon devicon-react-plain"></i>
@@ -187,14 +191,26 @@
                             </ul>
                             <hr>
                             <div class="description">
-                                <p>A Netherlands based seltzer start up was looking for an eye catching new home page.
-                                    They requested a simple Wordpress landing page with plenty of scroll animations to
-                                    stand out. Working with their designer, we were able to create sleek homepage with a
-                                    sense of depth and motion to it.</p>
+                                <p>A fullstack web application that scrapes YouTube with the YouTube Data API, finds new
+                                    trailers, and adds them
+                                    to a PostgreSQL database via a Node.js server.</p>
+                                <p>Each trailer is parsed and has movie poster and release date information added to its
+                                    Database entry using the TMDB API.</p>
+                                <p>Trailer information after each scrape interval is cached using a Redis cache on the
+                                    Heroku
+                                    hosting service to expediate client requests, and avoid unnecessary extra calls to
+                                    the database.</p>
+                                <p>OAuth is used for user authentication, allowing users to mark spoiler sections in
+                                    videos. These sections are then attached to the trailers allowing other users to
+                                    have these sections blocked while watching.</p>
+                                <p>There is also an admin backend which allows administrators to manually update trailer
+                                    information.</p>
+                                <p>Admin accounts are secured using JSON Web Token authentication on the server.</p>
                             </div>
                         </div>
                         <div class="screenshot">
-                            <video src="/media/video/trimmed-video.mp4" alt="" class="w-100" autoplay muted loop />
+                            <video src="/media/video/best-before-trimmed.mp4" alt="" class="w-100" autoplay muted
+                                loop />
                         </div>
                     </div>
 
