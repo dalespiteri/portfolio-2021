@@ -3,7 +3,8 @@
 body {
     background-color: $almostBlack;
     color: white;
-    background: linear-gradient(225deg, #133633, $almostBlack 40%);
+    // background: linear-gradient(225deg, #133633, $almostBlack 40%);
+    background: radial-gradient(circle at 100% 0%, #133633, $almostBlack 40%);
     background-attachment: fixed;
 }
 
