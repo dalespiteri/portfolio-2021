@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="/styles/style.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/media/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/media/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/media/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/media/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -115,12 +125,12 @@
         <section class="projects">
             <div class="container">
                 <div class="content">
-                    <h2 class="section-title">Projects</h2>
+                    <h2 class="section-title typing-text" id="projects-title" data-typer="Projects">&nbsp;</h2>
 
                     <div class="project">
                         <div class="info">
                             <a href="https://lot-42.com/" target="_blank">
-                                <h3>Lot 42</h3>
+                                <h3 id="lot-42-title" class="typing-text" data-typer="Lot 42">&nbsp;</h3>
                             </a>
                             <ul class="tech-stack inline-list">
                                 <li>
@@ -152,10 +162,12 @@
                         </div>
                     </div>
 
+                    <hr>
+
                     <div class="project">
                         <div class="info">
                             <a href="https://calm-ocean-43331.herokuapp.com/#/" target="_blank">
-                                <h3>Best Before Trailers</h3>
+                                <h3 id="bbt-title" class="typing-text" data-typer="Best Before Trailers">&nbsp;</h3>
                             </a>
                             <ul class="tech-stack inline-list">
                                 <li>
@@ -191,9 +203,10 @@
                             </ul>
                             <hr>
                             <div class="description">
-                                <p>A fullstack web application that scrapes YouTube with the YouTube Data API, finds new
-                                    trailers, and adds them
-                                    to a PostgreSQL database via a Node.js server.</p>
+                                <p>A fullstack React.js web application that scrapes YouTube with the YouTube Data API,
+                                    finds new
+                                    trailers, and adds them to a PostgreSQL database via a Node.js server and Express
+                                    API.</p>
                                 <p>Each trailer is parsed and has movie poster and release date information added to its
                                     Database entry using the TMDB API.</p>
                                 <p>Trailer information after each scrape interval is cached using a Redis cache on the
@@ -202,10 +215,11 @@
                                     the database.</p>
                                 <p>OAuth is used for user authentication, allowing users to mark spoiler sections in
                                     videos. These sections are then attached to the trailers allowing other users to
-                                    have these sections blocked while watching.</p>
+                                    have these sections blocked while watching, as well as vote on user submitted
+                                    content. User data is stored in a global state using Redux.</p>
                                 <p>There is also an admin backend which allows administrators to manually update trailer
-                                    information.</p>
-                                <p>Admin accounts are secured using JSON Web Token authentication on the server.</p>
+                                    information. Admin accounts are secured using JSON Web Token authentication on the
+                                    server.</p>
                             </div>
                         </div>
                         <div class="screenshot">
@@ -214,9 +228,11 @@
                         </div>
                     </div>
 
+                    <hr>
+
                     <div class="project">
                         <div class="info">
-                            <h3>25 Photography</h3>
+                            <h3 id="photography-title" class="typing-text" data-typer="25 Photography">&nbsp;</h3>
                             <ul class="tech-stack inline-list">
                                 <li>
                                     <i class="devicon devicon-nextjs-original-wordmark"></i>
