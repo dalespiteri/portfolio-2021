@@ -27,7 +27,6 @@ h2 {
 
     &.section-title {
         color: $brightTeal;
-        margin-bottom: 100px;
     }
 }
 
@@ -38,4 +37,22 @@ h3 {
 
 p:not(:last-child) {
     margin-bottom: 1em;
+}
+
+.typing-text {
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+
+    &:after {
+        content: '';
+        width: 0.45em;
+        height: 3px;
+        background-color: $brightTeal;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(110%, -0.1em);
+        animation: 1300ms ease-out 0s infinite both blink;
+    }
 }
