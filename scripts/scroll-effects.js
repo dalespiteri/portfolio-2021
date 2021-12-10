@@ -12,7 +12,7 @@ window.onload = function () {
         scrollY: {
             translateX: [
                 ["elInY", "elCenterY", "elOutY"],
-                ['-screenWidth/2', 0, 'screenWidth/2'],
+                ['screenWidth/2', 0, '-screenWidth/2'],
             ],
             opacity: [
                 ["elInY+150", "elCenterY-100", "elCenterY+100", "elOutY-150"],
