@@ -1,4 +1,5 @@
 window.onload = function () {
+
     lax.init()
 
     // Add a driver that we use to control our animations
@@ -10,9 +11,14 @@ window.onload = function () {
     lax.addElements('.project', {
         scrollY: {
             translateX: [
-                ["elInY", "elInY+500", "elOutY-500", "elOutY"],
-                [-100, 0, 0, 100],
-            ]
+                ["elInY", "elCenterY", "elOutY"],
+                ['-screenWidth/2', 0, 'screenWidth/2'],
+            ],
+            opacity: [
+                ["elInY+150", "elCenterY-100", "elCenterY+100", "elOutY-150"],
+                [0, 1, 1, 0]
+            ],
         }
-    })
+    });
+
 }
