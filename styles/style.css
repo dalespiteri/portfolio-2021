@@ -170,7 +170,7 @@ header .menu nav ul li { margin-left: 40px; }
 
 .hero .content .title h1 { margin-bottom: -0.05em; position: relative; left: -0.04em; -webkit-animation: 700ms ease-out 0s 1 forwards slideDown; animation: 700ms ease-out 0s 1 forwards slideDown; line-height: 1; }
 
-.hero .content .title h2 { text-transform: uppercase; font-size: 1.8rem; font-weight: 200; letter-spacing: 0.25em; color: #66FCF1; -webkit-animation: 800ms ease-out 0s 1 forwards slideUp; animation: 800ms ease-out 0s 1 forwards slideUp; line-height: 1; }
+.hero .content .title h2 { text-transform: uppercase; font-size: 1.7rem; font-weight: 200; letter-spacing: 0.25em; color: #66FCF1; -webkit-animation: 800ms ease-out 0s 1 forwards slideUp; animation: 800ms ease-out 0s 1 forwards slideUp; line-height: 1; }
 
 .hero .content .dev-icons { font-size: 3rem; }
 
